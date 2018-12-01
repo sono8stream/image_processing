@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="optris_drivers" name="optris_mono_image_node" type="optris_mono_image_node">
+        <param name="minTemp" value="-13.0"/>
+        <param name="maxTemp" value="-7.0"/>
+    </node>
+    <node pkg="optris_listener" name="BirdEyeImagePublisher" type="bird_eye.py"/>
+    <node pkg="pcl_tutorial" name="rut_calibration" type="example"/>
+</launch>
